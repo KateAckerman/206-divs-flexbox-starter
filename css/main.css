@@ -97,19 +97,97 @@ textarea {
 
 
 html {
-  background-color: #DAF7A6;
-  height: 100%;
+background: url('../img/blue-universe.jpg');
+background-size: cover;
+font-size: 16px;
+height: 100%;
+width: 100%;
 }
 
 body {
-  font-family: 'Arvo', serif;
-  padding: 3em;
-  font-size: 1.25em;
   height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
 
-.wrapper {
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+
+
+header, main, footer {
+  font-family: 'Bellota Text', cursive;
+  color: white;
+  text-align: center;
+  padding: .25em;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  font-size: 4.5em;
+  border-bottom: white 3px double;
+}
+
+main {
+  font-size: 2em;
+  font-weight: lighter;
+
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color: white;
+
+}
+
+.flex-items {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 28%;
+  height: 200px;
+}
+
+footer {
+  font-size: 1.25em;
+  display: inline-block;
+  margin-left: 450px;
+}
+
+#contact img {
+  float: left;
+    height: 55px;
+    width: 55px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact p {
+  text-align: center;
+  margin-left: -450px;
+}
+
+
+#flex-items {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
@@ -117,19 +195,25 @@ body {
 
 }
 
-.div-1, .div-2, .div-3 {
+#div-1, #div-2, #div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
-  color: #265575;
+  width: 28%;
   line-height: 1.5em;
   font-size: 1em;
-  background-color: white;
   height: 200px;
-  padding: 10px;
+  padding: 20px;
 }
+
+#div-2 {
+  border-right: solid 3px white;
+  border-left: solid 3px white;
+
+}
+
+
 
 
 
